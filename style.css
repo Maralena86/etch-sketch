@@ -3,6 +3,7 @@ body{
     display: flex;
     align-items: center;
     height: 100vh;
+    background-image: linear-gradient(rgb(31, 9, 9), rgb(139, 52, 52) );
 }
 h1{
     color: white;
@@ -24,7 +25,7 @@ h1{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color:  rgb(14, 11, 40);
+    background-image: linear-gradient(rgb(34, 34, 87), black);
     border-radius: 20px;
     width: 80%;
     margin-right: auto;
@@ -36,24 +37,44 @@ h1{
     width: 600px;
     height: 600px;  
     border: 2px solid black; 
+    border-radius: 10px;
+    overflow: hidden;
     
+}
+#sketch-word{
+    color: rgb(93, 93, 128);
+}
+#a-word{
+    color: rgb(143, 53, 53);
 }
 #selectColor{
     width: 60px;
     height: 30px;
     border: 1px solid rgb(91, 88, 83); 
     box-shadow: 4px 4px 4px black;
+    border-radius: 13px;
 }
 .colorSquare:hover{
     background-color: rgb(38, 241, 241);    
 }
 .colorSquare{
     border: 1px solid rgb(233, 230, 230);
-    background-color: #cecece;
+    background-color: rgb(214, 214, 214);
+}
+.colorSquare:hover{
+    cursor: pointer;
 }
 #clear{
-    background-color: wheat;
-    color: black;
+    background-image: linear-gradient(rgb(139, 33, 33), rgb(68, 20, 20));
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 4px 4px black;
+    border: none;
+    box-shadow: 3px 3px 3px black;
     padding: 10px 20px;
     border-radius: 10px;
+}
+#clear:hover{
+    cursor: pointer;
+    opacity: 0.8;
 }
